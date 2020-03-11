@@ -1,0 +1,394 @@
+$primary-color:#222222;
+$sec-color: #7E78D2;
+$white:white;
+
+@import url('https://fonts.googleapis.com/css?family=Spartan&display=swap');
+
+* { margin: 0; padding: 0;}
+
+.half { 
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  display: block;
+  z-index:3;
+
+}
+
+.half:first-child {
+  -webkit-clip-path: polygon(0 0, 0 100vh, 100% 100vh);
+  clip-path: polygon(0 0, 0 100vh, 100% 100vh);
+  background: $primary-color;
+}
+
+.half:last-child {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100vh);
+  clip-path: polygon(0 0, 0 100vh, 100% 100vh);
+  background: #222222;  
+}
+
+
+
+body {
+  font-family: 'Spartan', sans-serif;
+  background-color:whitesmoke;
+  width:100%;
+}
+
+
+
+
+.navbar {
+  width:100%;
+  position:fixed;
+  z-index:99;
+
+h1 {
+  font-size:30px;
+}
+
+}
+
+.header {
+  height:100vh;
+}
+
+
+
+.portfolio {
+  position:absolute;
+  right:5px;
+ bottom:0;
+  top:0;
+  z-index:5;
+
+
+
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  height:100vh;
+
+  h1 {
+    font-size:32px;
+    color:$primary-color;
+  }
+}
+
+.aboutUs {
+  position:absolute;
+z-index:5;
+  top:0;
+  bottom:0;
+  left:0;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  left:5px;
+  height:100vh;
+  
+
+  
+  h1 {
+    color:white;
+    font-size:32px;
+  }
+}
+
+
+
+
+.social1 {
+ 
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  position:absolute;
+
+  .fab, .fas {
+    color:white;
+  }
+  bottom:7px;
+  width:100%;
+  z-index:5;
+  font-size:25px;
+
+  
+  
+}
+
+
+.header1 {
+  height:100vh;
+  background: $white;
+  clip-path: polygon(100% 100%, 100% 0%, 0% 100%);
+  
+
+
+}
+
+.header11 {
+  height:100vh;
+  background: #222222;
+  position:relative;
+  
+
+
+
+}
+
+.headerText {
+  position:absolute;
+  left:20px;
+  top:20px;
+
+  h1 {
+    color:whitesmoke;
+  }
+
+  .text1 {
+    width:100%;
+    line-height: 5.5;
+    font-size:50px;
+    text-align: left;
+  }
+}
+
+
+.headerText1 {
+  position:absolute;
+  right:0;
+  bottom:0;
+  width:50%;
+
+
+  
+
+  h1 {
+    color:#222222
+  }
+
+  .text2 {
+
+    line-height: 2;
+    font-size:25px;
+    text-align: right;
+
+  }
+}
+
+svg {
+  display: block;
+  margin: 0 auto;
+}
+
+path {
+  fill: none;
+  stroke: black;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+
+
+
+
+
+
+.portfolio1 {
+  position:absolute;
+  right:10px;
+ bottom:0;
+  top:0;
+
+ 
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  height:100vh;
+
+  h1 {
+    font-size:40px;
+    color:$primary-color;
+  }
+}
+
+.aboutUs1 {
+  position:absolute;
+
+  top:0;
+  bottom:0;
+  left:0;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  left:20px;
+  height:100vh;
+  
+
+  
+  h1 {
+    color:$primary-color;
+    font-size:40px;
+  }
+}
+
+
+
+
+.social11 {
+  position:absolute;
+
+  .fab, .fas {
+    color:white;
+  }
+  bottom:20px;
+  width:300px;
+  left:0;
+  right:0;
+
+  
+  
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900');
+$main: #222222;
+$second: white;
+
+
+
+
+
+.intro {
+
+  overflow: hidden;
+  display:none;
+  position:absolute;
+  top:0;
+  z-index:101;
+  text-align:center;
+  height: 100vh;
+  color: $white;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color:$primary-color;
+
+  p {
+    line-height: 1.8;
+    font-size:20px;
+    opacity:0.8;
+  }
+
+  .text {
+    display:flex;
+    flex-direction:column;
+    padding:30px;
+    text-align:right;
+  }
+
+  .text1 {
+    display:flex;
+    flex-direction:column;
+    padding-top:30px;
+    padding-bottom:0;
+    padding-right:30px;
+    padding-left:30px;
+    text-align:right;
+  }
+
+  hr {
+    height:1.2px;
+    background-image:linear-gradient(to right, rgba(91, 141, 140, 0), rgba(91, 141, 140, 0.75));
+    padding:0;
+    margin:0 !important;
+  }
+
+  .back {
+    position:absolute;
+    bottom:0px;
+    width:100px;
+    padding:10px !important;
+    margin:0 !important;
+    right:0px;
+    opacity:0.8;
+    
+    
+
+    #fadeout {
+
+     
+
+      .fas {
+        color:white;
+      }
+    }
+  }
+}
+
+.intro1 {
+
+  overflow: hidden;
+  display:none;
+  position:absolute;
+  top:0;
+  z-index:101;
+  text-align:center;
+  height: 100vh;
+  color: $white;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color:whitesmoke;
+
+  p {
+    line-height: 1.8;
+    font-size:20px;
+    opacity:0.8;
+    color:black
+  }
+
+  .text {
+    display:flex;
+    flex-direction:column;
+    padding:30px;
+    text-align:right;
+  }
+
+  .text1 {
+    display:flex;
+    flex-direction:column;
+    padding-top:30px;
+    padding-bottom:0;
+    padding-right:30px;
+    padding-left:30px;
+    text-align:right;
+
+    h1 {
+      color:black;
+    }
+  }
+
+  hr {
+    height:1.2px;
+    background-image:linear-gradient(to right, rgba(91, 141, 140, 0), rgba(91, 141, 140, 0.75));
+    padding:0;
+    margin:0 !important;
+  }
+
+  .back {
+    position:absolute;
+    bottom:0px;
+    width:100px;
+    padding:10px !important;
+    margin:0 !important;
+    right:0px;
+    opacity:0.8;
+    
+  
+  }
+}
+
+
+
+

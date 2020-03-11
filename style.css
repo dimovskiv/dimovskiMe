@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css?family=Spartan&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.half {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  display: block;
+  z-index: 3;
+}
+
+.half:first-child {
+  -webkit-clip-path: polygon(0 0, 0 100vh, 100% 100vh);
+  clip-path: polygon(0 0, 0 100vh, 100% 100vh);
+  background: #222222;
+}
+
+.half:last-child {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100vh);
+  clip-path: polygon(0 0, 0 100vh, 100% 100vh);
+  background: #222222;
+}
+
+body {
+  font-family: 'Spartan', sans-serif;
+  background-color: whitesmoke;
+  width: 100%;
+}
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+}
+
+.navbar h1 {
+  font-size: 30px;
+}
+
+.header {
+  height: 100vh;
+}
+
+.portfolio {
+  position: absolute;
+  right: 5px;
+  bottom: 0;
+  top: 0;
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+.portfolio h1 {
+  font-size: 32px;
+  color: #222222;
+}
+
+.aboutUs {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 5px;
+  height: 100vh;
+}
+
+.aboutUs h1 {
+  color: white;
+  font-size: 32px;
+}
+
+.social1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: 7px;
+  width: 100%;
+  z-index: 5;
+  font-size: 25px;
+}
+
+.social1 .fab, .social1 .fas {
+  color: white;
+}
+
+.header1 {
+  height: 100vh;
+  background: white;
+  -webkit-clip-path: polygon(100% 100%, 100% 0%, 0% 100%);
+          clip-path: polygon(100% 100%, 100% 0%, 0% 100%);
+}
+
+.header11 {
+  height: 100vh;
+  background: #222222;
+  position: relative;
+}
+
+.headerText {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.headerText h1 {
+  color: whitesmoke;
+}
+
+.headerText .text1 {
+  width: 100%;
+  line-height: 5.5;
+  font-size: 50px;
+  text-align: left;
+}
+
+.headerText1 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+}
+
+.headerText1 h1 {
+  color: #222222;
+}
+
+.headerText1 .text2 {
+  line-height: 2;
+  font-size: 25px;
+  text-align: right;
+}
+
+svg {
+  display: block;
+  margin: 0 auto;
+}
+
+path {
+  fill: none;
+  stroke: black;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.portfolio1 {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+.portfolio1 h1 {
+  font-size: 40px;
+  color: #222222;
+}
+
+.aboutUs1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 20px;
+  height: 100vh;
+}
+
+.aboutUs1 h1 {
+  color: #222222;
+  font-size: 40px;
+}
+
+.social11 {
+  position: absolute;
+  bottom: 20px;
+  width: 300px;
+  left: 0;
+  right: 0;
+}
+
+.social11 .fab, .social11 .fas {
+  color: white;
+}
+
+.intro {
+  overflow: hidden;
+  display: none;
+  position: absolute;
+  top: 0;
+  z-index: 101;
+  text-align: center;
+  height: 100vh;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #222222;
+}
+
+.intro p {
+  line-height: 1.8;
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+.intro .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px;
+  text-align: right;
+}
+
+.intro .text1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 0;
+  padding-right: 30px;
+  padding-left: 30px;
+  text-align: right;
+}
+
+.intro hr {
+  height: 1.2px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(91, 141, 140, 0)), to(rgba(91, 141, 140, 0.75)));
+  background-image: linear-gradient(to right, rgba(91, 141, 140, 0), rgba(91, 141, 140, 0.75));
+  padding: 0;
+  margin: 0 !important;
+}
+
+.intro .back {
+  position: absolute;
+  bottom: 0px;
+  width: 100px;
+  padding: 10px !important;
+  margin: 0 !important;
+  right: 0px;
+  opacity: 0.8;
+}
+
+.intro .back #fadeout .fas {
+  color: white;
+}
+
+.intro1 {
+  overflow: hidden;
+  display: none;
+  position: absolute;
+  top: 0;
+  z-index: 101;
+  text-align: center;
+  height: 100vh;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: whitesmoke;
+}
+
+.intro1 p {
+  line-height: 1.8;
+  font-size: 20px;
+  opacity: 0.8;
+  color: black;
+}
+
+.intro1 .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px;
+  text-align: right;
+}
+
+.intro1 .text1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 0;
+  padding-right: 30px;
+  padding-left: 30px;
+  text-align: right;
+}
+
+.intro1 .text1 h1 {
+  color: black;
+}
+
+.intro1 hr {
+  height: 1.2px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(91, 141, 140, 0)), to(rgba(91, 141, 140, 0.75)));
+  background-image: linear-gradient(to right, rgba(91, 141, 140, 0), rgba(91, 141, 140, 0.75));
+  padding: 0;
+  margin: 0 !important;
+}
+
+.intro1 .back {
+  position: absolute;
+  bottom: 0px;
+  width: 100px;
+  padding: 10px !important;
+  margin: 0 !important;
+  right: 0px;
+  opacity: 0.8;
+}
+/*# sourceMappingURL=style.css.map */
